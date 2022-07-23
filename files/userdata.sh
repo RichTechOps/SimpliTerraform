@@ -16,4 +16,9 @@ sudo chmod -R 755 /var/www/html/
 sudo cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php
 sudo service apache2 restart
 sleep 20
+### Ansible install
+sudo apt install software-properties-common
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible
+ansible --version
 
